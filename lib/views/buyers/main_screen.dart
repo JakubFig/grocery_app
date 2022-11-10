@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
@@ -21,24 +22,36 @@ class _MainScreenState extends State<MainScreen> {
             label: 'HOME',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset(
+              'assets/icons/explore.svg',
+              width: 20,
+            ),
+            label: 'CATEGORIES',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset(
+              'assets/icons/shop.svg',
+              width: 20,
+            ),
+            label: 'STORE',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset(
+              'assets/icons/cart.svg',
+            ),
+            label: 'CART',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset(
+              'assets/icons/search.svg',
+            ),
+            label: 'SEARCH',
           ),
           BottomNavigationBarItem(
-            icon: Icon(CupertinoIcons.home),
-            label: 'HOME',
+            icon: SvgPicture.asset(
+              'assets/icons/account.svg',
+            ),
+            label: 'ACCOUNT',
           ),
         ],
       ),
